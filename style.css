@@ -219,6 +219,7 @@ body {
 .timeline-block {
 	position: relative;
 	padding-left: 30px;
+	cursor: pointer;
 }
 
 .timeline-block:not(:last-of-type) {
@@ -293,7 +294,8 @@ body {
 }
 
 .pg-list>li>span {
-	flex: 0 0 100px;
+	flex: 0 0 150px;
+	text-align: left;
 }
 
 .sb-skeleton>.skillbar {
@@ -305,16 +307,28 @@ body {
 	background-color: var(--profile-theme);
 }
 
+.pg-list li:hover {
+	cursor: pointer;
+}
+
+.pg-list li:hover .skillbar {
+	background-color: var(--color-tiffany);
+	top: -2px;
+	height: 6px;
+	transition: 1s;
+}
+
 .tool-list {
 	list-style: none;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 .tool-list>li {
 	position: relative;
 	text-align: center;
 	flex: 0 0 25%;
+	cursor: pointer;
 }
 
 .tool-list>li>svg {
@@ -356,6 +370,7 @@ body {
 	top: 50%;
 	font-size: 1.2rem;
 	transform: translate(-50%, -50%);
+	font-weight: bold;
 }
 
 .tool-list>li>.tl-exp {
