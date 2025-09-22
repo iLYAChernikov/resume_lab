@@ -487,3 +487,24 @@ body {
 		font-size: 70%;
 	}
 }
+
+.btn-print {
+	width: 180px;
+	height: 60px;
+	cursor: pointer;
+	background: transparent;
+	border: 1px solid var(--color-tiffany);
+	outline: none;
+	transition: 1s ease-in-out;
+	border-radius: 20px;
+	font-weight: bold;
+	position: relative;
+	left: 35px;
+	top: 50px;
+}
+
+.btn-print:hover {
+	transition: 1s ease-in-out;
+	background: var(--color-blue-dark-1);
+	color: var(--color-gray-light-1);
+}
